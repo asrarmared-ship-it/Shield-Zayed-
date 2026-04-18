@@ -258,8 +258,8 @@ bandit -r src/
 ## 📞 الدعم والتواصل
 
 - 💬 **المنتدى**: [community.zayed-shield.ae](https://community.zayed-shield.ae)
-- 📧 **البريد**: support@zayed-shield.ae
-- 📱 **تويتر**: [@ZayedShield](https://twitter.com/ZayedShield)
+- 📧 **البريد**: nike49424@gmail.com
+- 📱 **تويتر**: [@nike49424](https://twitter.com//nike49424)
 - 💼 **لينكد إن**: [Zayed CyberShield](https://linkedin.com/company/zayed-shield)
 
 ---
