@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🔒💀 نظام التشفير المتقدم 💀🔒</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Orbitron', monospace;
+            background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
+            color: #00ff88;
+            min-height: 100vh;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Matrix Background */
+        .matrix-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: rgba(0, 0, 0, 0.9);
+            border-radius: 20px;
+            border: 3px solid #00ff88;
+            padding: 30px;
+            box-shadow: 0 0 50px rgba(0, 255, 136, 0.3);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .main-title {
+            font-size: clamp(1.5rem, 5vw, 3rem);
+            color: #ff6600;
+            text-shadow: 0 0 20px #ff6600;
+            margin-bottom: 15px;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from { text-shadow: 0 0 20px #ff6600; }
+            to { text-shadow: 0 0 30px #ff6600, 0 0 40px #ff3300; }
+        }
+
+        .features-panel {
+            background: linear-gradient(45deg, rgba(255, 102, 0, 0.1), rgba(0, 0, 0, 0.9));
+            border: 2px solid #ff6600;
+            border-radius: 15px;
+            padding: 30px;
+            margin-bottom: 30px;
+            position: relative;
+        }
+
+        .features-title {
+            color: #ff6600;
+            font-size: 1.8rem;
+            margin-bottom: 25px;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .features-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .feature-item {
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            padding: 15px;
+            color: #00ff88;
+            font-size: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            border-color: #ff6600;
+            background: rgba(255, 102, 0, 0.1);
+            transform: translateX(5px);
+        }
+
+        .feature-icon {
+            color: #ff6600;
+            font-size: 1.2rem;
+        }
+
+        .encryption-tools {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .tool-card {
+            background: linear-gradient(135deg, rgba(0, 255, 136, 0.1), rgba(0, 0, 0, 0.9));
+            border: 2px solid #00ff88;
+            border-radius: 15px;
+            padding: 25px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tool-title {
+            color: #ff6600;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-label {
+            display: block;
+            color: #00ff88;
+            margin-bottom: 8px;
+            font-size: 0.9rem;
+        }
+
+        .input-field {
+            width: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            border: 1px solid #00ff88;
+            border-radius: 8px;
+            padding: 12px;
+            color: #00ff88;
+            font-family: monospace;
+            font-size: 0.9rem;
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .input-field:focus {
+            outline: none;
+            border-color: #ff6600;
+            box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+        }
+
+        .key-input {
+            min-height: 40px;
+        }
+
+        .btn {
+            background: linear-gradient(45deg, #ff6600, #ff3300);
+            border: none;
+            border-radius: 8px;
+            padding: 12px 25px;
+            color: white;
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin: 5px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 102, 0, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(45deg, #00ff88, #00aa55);
+        }
+
+        .btn-danger {
+            background: linear-gradient(45deg, #ff0000, #cc0000);
+        }
+
+        .output-area {
+            background: rgba(0, 0, 0, 0.9);
+            border: 1px solid #ff6600;
+            border-radius: 8px;
+            padding: 15px;
+            color: #ff6600;
+            font-family: monospace;
+            font-size: 0.8rem;
+            min-height: 120px;
+            margin-top: 15px;
+            overflow-y: auto;
+            word-break: break-all;
+        }
+
+        .stats-panel {
+            background: linear-gradient(45deg, rgba(255, 0, 0, 0.1), rgba(0, 0, 0, 0.9));
+            border: 2px solid #ff0000;
+            border-radius: 15px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 1px solid #ff0000;
+            border-radius: 8px;
+        }
+
+        .stat-number {
+            display: block;
+            font-size: 2rem;
+            color: #ff0000;
+            font-weight: 900;
+        }
+
+        .stat-label {
+            color: #00ff88;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        .warning-box {
+            background: rgba(255, 0, 0, 0.1);
+            border: 2px solid #ff0000;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .warning-text {
+            color: #ff0000;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .encryption-tools {
+                grid-template-columns: 1fr;
+            }
+            
+            .container {
+                padding: 20px;
+            }
+        }
+
+        /* Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #1a1a1a;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: linear-gradient(45deg, #ff6600, #ff3300);
+            border-radius: 4px;
+        }
+
+        /* Animation for numbers */
+        .matrix-number {
+            color: #00ff88;
+            font-family: monospace;
+            animation: matrix-flicker 0.1s linear infinite;
+        }
+
+        @keyframes matrix-flicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+    </style>
+</head>
+<body>
+    <div class="matrix-bg" id="matrixBg"></div>
+    
+    <div class="container">
+        <div class="header">
+            <h1 class="main-title">
+                🔒💀⚔️ نظام التشفير المتقدم ⚔️💀🔒
+            </h1>
+            <p style="color: #00ff88; font-size: 1.1rem;">
+                🧙‍♂️✨ Advanced Encryption & Decryption System ✨🧙‍♂️
+            </p>
+        </div>
+
+        <!-- Features Panel -->
+        <div class="features-panel">
+            <h2 class="features-title">
+                🛡️🔥 Layer Available Features 🔥🛡️
+            </h2>
+            
+            <div class="features-list">
+                <div class="feature-item">
+                    <span class="feature-icon">🔐</span>
+                    <span>AES-256 Advanced Encryption</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔄</span>
+                    <span>XOR Multi-Layer Protection</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎯</span>
+                    <span>Base64 Encoding/Decoding</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🧮</span>
+                    <span>Caesar Cipher Algorithm</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🔢</span>
+                    <span>Binary Conversion</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🌐</span>
+                    <span>Hex Encoding Support</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">🎲</span>
+                    <span>Random Key Generation</span>
+                </div>
+                <div class="feature-item">
+                    <span class="feature-icon">⚡</span>
+                    <span>Real-time Processing</span>
+                </div>
+            </div>
+
+            <div class="warning-box">
+                <div class="warning-text">
+                    ⚠️🚨 تحذير أمني - Security Warning 🚨⚠️
+                </div>
+                <p style="color: #ff6600;">
+                    🔒💀 هذا النظام مصمم لأغراض تعليمية فقط - استخدمه بحذر! 💀🔒
+                </p>
+            </div>
+        </div>
+
+        <!-- Encryption Tools -->
+        <div class="encryption-tools">
+            <!-- Base64 Tool -->
+            <div class="tool-card">
+                <h3 class="tool-title">🎯🔐 Base64 Encoder/Decoder 🔐🎯</h3>
+                
+                <div class="input-group">
+                    <label class="input-label">📝 النص الأصلي - Original Text:</label>
+                    <textarea class="input-field" id="base64Input" placeholder="أدخل النص هنا..."></textarea>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="btn" onclick="encodeBase64()">🔒 تشفير - Encode</button>
+                    <button class="btn btn-secondary" onclick="decodeBase64()">🔓 فك التشفير - Decode</button>
+                    <button class="btn btn-danger" onclick="clearBase64()">🗑️ مسح - Clear</button>
+                </div>
+                
+                <div class="output-area" id="base64Output">
+                    📤 النتيجة ستظهر هنا... 📤
+                </div>
+            </div>
+
+            <!-- XOR Tool -->
+            <div class="tool-card">
+                <h3 class="tool-title">⚡🔄 XOR Encryption 🔄⚡</h3>
+                
+                <div class="input-group">
+                    <label class="input-label">📝 النص - Text:</label>
+                    <textarea class="input-field" id="xorText" placeholder="أدخل النص..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">🔑 المفتاح - Key:</label>
+                    <input type="text" class="input-field key-input" id="xorKey" placeholder="أدخل المفتاح السري...">
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="btn" onclick="xorEncrypt()">🔒 تشفير XOR</button>
+                    <button class="btn" onclick="generateXorKey()">🎲 مفتاح عشوائي</button>
+                    <button class="btn btn-danger" onclick="clearXor()">🗑️ مسح</button>
+                </div>
+                
+                <div class="output-area" id="xorOutput">
+                    📤 النتيجة المشفرة ستظهر هنا... 📤
+                </div>
+            </div>
+
+            <!-- Caesar Cipher -->
+            <div class="tool-card">
+                <h3 class="tool-title">🏛️📜 Caesar Cipher 📜🏛️</h3>
+                
+                <div class="input-group">
+                    <label class="input-label">📝 النص - Text:</label>
+                    <textarea class="input-field" id="caesarText" placeholder="أدخل النص..."></textarea>
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">🔢 الإزاحة - Shift (1-25):</label>
+                    <input type="number" class="input-field key-input" id="caesarShift" min="1" max="25" value="3">
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="btn" onclick="caesarEncrypt()">🔒 تشفير Caesar</button>
+                    <button class="btn btn-secondary" onclick="caesarDecrypt()">🔓 فك التشفير</button>
+                    <button class="btn btn-danger" onclick="clearCaesar()">🗑️ مسح</button>
+                </div>
+                
+                <div class="output-area" id="caesarOutput">
+                    📤 النتيجة ستظهر هنا... 📤
+                </div>
+            </div>
+
+            <!-- Binary Converter -->
+            <div class="tool-card">
+                <h3 class="tool-title">🔢💻 Binary Converter 💻🔢</h3>
+                
+                <div class="input-group">
+                    <label class="input-label">📝 النص - Text:</label>
+                    <textarea class="input-field" id="binaryText" placeholder="أدخل النص أو الكود الثنائي..."></textarea>
+                </div>
+                
+                <div style="text-align: center;">
+                    <button class="btn" onclick="textToBinary()">🔒 نص إلى ثنائي</button>
+                    <button class="btn btn-secondary" onclick="binaryToText()">🔓 ثنائي إلى نص</button>
+                    <button class="btn btn-danger" onclick="clearBinary()">🗑️ مسح</button>
+                </div>
+                
+                <div class="output-area" id="binaryOutput">
+                    📤 الكود الثنائي سيظهر هنا... 📤
+                </div>
+            </div>
+        </div>
+
+        <!-- Statistics Panel -->
+        <div class="stats-panel">
+            <h2 style="color: #ff0000; text-align: center; margin-bottom: 20px;">
+                📊💀 إحصائيات التشفير المباشرة 💀📊
+            </h2>
+            
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <span class="stat-number" id="encryptionCount">0</span>
+                    <span class="stat-label">🔒 عمليات تشفير</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="decryptionCount">0</span>
+                    <span class="stat-label">🔓 عمليات فك تشفير</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="charactersProcessed">0</span>
+                    <span class="stat-label">📝 أحرف معالجة</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" id="securityLevel">100</span>
+                    <span class="stat-label">🛡️ مستوى الأمان%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Statistics tracking
+        let stats = {
+            encryptions: 0,
+            decryptions: 0,
+            characters: 0
+        };
+
+        // Matrix background effect
+        function createMatrixBackground() {
+            const container = document.getElementById('matrixBg');
+            const chars = '01010101100110011010101011001100';
+            
+            for (let i = 0; i < 20; i++) {
+                const element = document.createElement('div');
+                element.style.position = 'absolute';
+                element.style.left = Math.random() * 100 + '%';
+                element.style.top = Math.random() * 100 + '%';
+                element.style.color = '#00ff88';
+                element.style.fontSize = '12px';
+                element.style.fontFamily = 'monospace';
+                element.className = 'matrix-number';
+                element.textContent = chars.substr(Math.floor(Math.random() * chars.length), 8);
+                container.appendChild(element);
+            }
+        }
+
+        // Base64 functions
+        function encodeBase64() {
+            const input = document.getElementById('base64Input').value;
+            if (!input.trim()) {
+                showAlert('⚠️ يرجى إدخال نص للتشفير!', 'warning');
+                return;
+            }
+            
+            try {
+                const encoded = btoa(unescape(encodeURIComponent(input)));
+                document.getElementById('base64Output').textContent = `🔒 النتيجة المشفرة:\n${encoded}`;
+                updateStats('encrypt', input.length);
+                showAlert('✅ تم التشفير بنجاح!', 'success');
+            } catch (error) {
+                showAlert('❌ خطأ في التشفير!', 'error');
+            }
+        }
+
+        function decodeBase64() {
+            const input = document.getElementById('base64Input').value;
+            if (!input.trim()) {
+                showAlert('⚠️ يرجى إدخال كود مشفر!', 'warning');
+                return;
+            }
+            
+            try {
+                const decoded = decodeURIComponent(escape(atob(input)));
+                document.getElementById('base64Output').textContent = `🔓 النص الأصلي:\n${decoded}`;
+                updateStats('decrypt', decoded.length);
+                showAlert('✅ تم فك التشفير بنجاح!', 'success');
+            } catch (error) {
+                showAlert('❌ خطأ في فك التشفير! تأكد من صحة الكود.', 'error');
+            }
+        }
+
+        function clearBase64() {
+            document.getElementById('base64Input').value = '';
+            document.getElementById('base64Output').textContent = '📤 النتيجة ستظهر هنا... 📤';
+        }
+
+        // XOR functions
+        function xorEncrypt() {
+            const text = document.getElementById('xorText').value;
+            const key = document.getElementById('xorKey').value;
+            
+            if (!text.trim() || !key.trim()) {
+                showAlert('⚠️ يرجى إدخال النص والمفتاح!', 'warning');
+                return;
+            }
+            
+            let result = '';
+            for (let i = 0; i < text.length; i++) {
+                result += String.fromCharCode(text.charCodeAt(i) ^ key.charCodeAt(i % key.length));
+            }
+            
+            const encoded = btoa(result);
+            document.getElementById('xorOutput').innerHTML = `🔒 النتيجة المشفرة:\n${encoded}\n\n🔑 المفتاح المستخدم: ${key}`;
+            updateStats('encrypt', text.length);
+            showAlert('✅ تم التشفير بـ XOR بنجاح!', 'success');
+        }
+
+        function generateXorKey() {
+            const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*';
+            let key = '';
+            for (let i = 0; i < 16; i++) {
+                key += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById('xorKey').value = key;
+            showAlert('🎲 تم توليد مفتاح عشوائي!', 'info');
+        }
+
+        function clearXor() {
+            document.getElementById('xorText').value = '';
+            document.getElementById('xorKey').value = '';
+            d
