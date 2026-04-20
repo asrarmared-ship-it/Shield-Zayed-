@@ -8,7 +8,7 @@ First off, thank you for considering contributing to Zayed Shield! 🎉
 
 If you find a security vulnerability, please **DO NOT** open a public issue. Instead:
 
-1. Email us at: nike49424@proton.me
+1. Email us at: nike49424@gmail.com
 2. Include detailed steps to reproduce
 3. Describe the expected vs actual behavior
 4. Provide system information
@@ -63,7 +63,6 @@ def validate_session(
         
     Raises:
         ValueError: If session_id is None
-    """
     pass
 ```
 
@@ -638,6 +637,42 @@ top -p $(pgrep -f vulnerability_hunter)
 - 🐛 Issues: github.com/asrar-mared/درع-زايد/issues
 
 ---
+# Contributing to Zayed Shield
+
+Thank you for your interest in contributing! 🙏
+
+## 🤝 How to Contribute
+
+### Reporting Bugs
+1. Check existing issues
+2. Create detailed bug report
+3. Include steps to reproduce
+
+### Feature Requests
+1. Open an issue
+2. Describe the feature
+3. Explain the use case
+
+### Code Contributions
+
+```bash
+# Fork the repo
+git clone https://github.com/YOUR_USERNAME/Zayed-Shield.git
+cd Zayed-Shield
+
+# Create a branch
+git checkout -b feature/amazing-feature
+
+# Make changes
+# Test thoroughly
+
+# Commit
+git commit -m "Add amazing feature"
+
+# Push
+git push origin feature/amazing-feature
+
+# Open Pull Request
 
 **Made with 🛡️ by asrar-mared**
 ```
