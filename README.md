@@ -533,10 +533,46 @@ MIT License - مفتوح المصدر للجميع
 
 ---
 
-<div align="center">
-
 **⚔️ محارب رقمي يحمي المجتمع الرقمي 🛡️**
 
 Made with 💙 by asrar-mared
 
 </div>
+
+# ⚔️ Android Supply Chain Security Research
+
+## ⚠️ ACTIVE SECURITY RESEARCH - DO NOT DISTRIBUTE
+
+This repository contains evidence of a critical supply chain attack 
+affecting the Android ecosystem.
+
+**Status:** Coordinated disclosure with Google Security Team  
+**Severity:** CVSS 9.8 (Critical)  
+**Impact:** 10M+ potential victims, $500k+ documented losses
+
+### 🔒 Responsible Disclosure Timeline
+
+- **Jan 16, 2026:** Vulnerability reported to Google VRP
+- **Jan 18, 2026:** Google acknowledged receipt
+- **[TBD]:** Patch development in progress
+- **Apr 16, 2026:** Public disclosure (if no fix)
+
+### 📋 Repository Contents
+
+- `/evidence/` - Visual documentation (screenshots, videos)
+- `/analysis/` - Technical analysis and reports
+- `/timeline/` - Detailed discovery timeline
+- `/impact/` - Financial and user impact data
+
+### ⚠️ Important Notice
+
+All APK files in this repository are infected/modified and should 
+NOT be installed. They are preserved for forensic analysis only.
+
+### 📧 Contact
+
+For media inquiries or collaboration: nike49424@gmail.com
+
+---
+
+🛡️ Protecting the digital community, one vulnerability at a time.
