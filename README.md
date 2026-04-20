@@ -165,6 +165,57 @@ alerts:
 - توصيات التحسين
 
 ---
+# ⚔️ Zayed Shield 🛡️
+
+<div align="center">
+
+
+
+![Zayed Shield Banner](https://via.placeholder.com/1200x300/0D1117/00D9FF?text=ZAYED+SHIELD+-+درع+زايد)
+
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
+![License](https://img.shields.io/badge/license-MIT-green.svg)
+![Platform](https://img.shields.io/badge/platform-Android-brightgreen.svg)
+
+**Advanced Protection System - Tribute to Sheikh Zayed 🇦🇪**
+
+**نظام حماية متقدم - إهداء للشيخ زايد**
+
+[📖 Docs](docs/DOCUMENTATION.md) | [🚀 Install](#installation) | [💡 Examples](#examples)[🤝 Contribute](#contributing)
+
+</div>
+
+
+## 🎖️ In Memory of Sheikh Zayed
+
+*"The greatest use of wealth is to spend it for the betterment of society"*  
+— Sheikh Zayed bin Sultan Al Nahyan
+
+This project embodies Sheikh Zayed's vision:
+- 🎓 **Knowledge** - Security through education
+- 🤝 **Unity** - Open collaboration
+- 🌍 **Global Vision** - Protection for all
+- 💪 **Wisdom** - Smart defense
+
+---
+
+## 👥 Team
+
+**Lead Developer:** asrar-mared (🇦🇪/🌍)  
+**Technical Advisor:** Uncle - Scribe, England (🇬🇧)  
+**Inspiration:** Sheikh Zayed bin Sultan Al Nahyan  
+
+---
+
+## ⚡ Quick Start
+
+```bash
+# Install
+curl -O https://raw.githubusercontent.com/asrar-mared/zayed-shield/main/install.sh
+chmod +x install.sh && ./install.sh
+
+# Run
+./zayed-shield.sh
 
 ## 🔧 الاستخدام المتقدم
 
