@@ -8,6 +8,18 @@
 ![Security](https://img.shields.io/badge/security-enterprise-red.svg)
 ![Status](https://img.shields.io/badge/status-active-success.svg)
 
+<div align="center">
+
+
+![GitHub release](https://img.shields.io/github/v/release/nike4565/Zayed-Shield?style=for-the-badge)
+![GitHub stars](https://img.shields.io/github/stars/nike4565/Zayed-Shield?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/nike4565/Zayed-Shield?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/nike4565/Zayed-Shield?style=for-the-badge)
+![License](https://img.shields.io/github/license/nike4565/Zayed-Shield?style=for-the-badge)
+![Platform](https://img.shields.io/badge/platform-Android-brightgreen?style=for-the-badge&logo=android)
+
+
+</div>
 **منصة متكاملة لحماية الأنظمة والبنية التحتية الرقمية**
 
 [التوثيق](docs/) · [التقارير](reports/) · [المساهمة](#المساهمة)
