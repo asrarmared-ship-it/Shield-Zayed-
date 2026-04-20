@@ -16,6 +16,16 @@
 
 ---
 
+<div align="center">
+
+[![Releases](https://img.shields.io/badge/📦_Releases-42_Versions-006233?style=for-the-badge&labelColor=004D00&logoColor=white)](https://github.com/nike4565/Zayed-Shield/releases)
+[![Wiki](https://img.shields.io/badge/📖_Wiki-Documentation-B8860B?style=for-the-badge&labelColor=7B5C00&logoColor=white)](https://github.com/nike4565/Zayed-Shield/wiki)
+[![Contributions](https://img.shields.io/badge/🛡️_Contributions-Security_Research-1565C0?style=for-the-badge&labelColor=0D47A1&logoColor=white)](https://github.com/nike4565/Zayed-Shield/graphs/contributors)
+[![Report Vulnerability](https://img.shields.io/badge/🚨_Report_Vulnerability-Zayed_Shield-CC0001?style=for-the-badge&labelColor=8B0000&logoColor=white)](https://github.com/nike4565/Zayed-Shield/security/advisories/new)
+
+</div>
+
+
 ## 📋 نظرة عامة
 
 **درع زايد** هو نظام أمن سيبراني شامل مصمم لحماية المؤسسات والبنية التحتية الحيوية من التهديدات الإلكترونية المتقدمة. يجمع المشروع بين تقنيات الكشف المبكر، التحليل الذكي، والاستجابة السريعة للحوادث الأمنية.
