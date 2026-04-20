@@ -309,3 +309,17 @@ bandit -r src/
 **asrar-mared** | [GitHub](https://github.com/asrar-mared)
 
 </div>
+
+<div align="center">
+
+### Quick Access
+
+[![Releases](https://img.shields.io/badge/📦_Releases-42_Versions-006233?style=for-the-badge&labelColor=004D00)](https://github.com/nike4565/Zayed-Shield/releases)
+&nbsp;
+[![Wiki](https://img.shields.io/badge/📖_Wiki-Documentation-B8860B?style=for-the-badge&labelColor=7B5C00)](https://github.com/nike4565/Zayed-Shield/wiki)
+&nbsp;
+[![Contributions](https://img.shields.io/badge/🛡️_Contributions-Security_Research-1565C0?style=for-the-badge&labelColor=0D47A1)](https://github.com/nike4565/Zayed-Shield/graphs/contributors)
+&nbsp;
+[![Report Vulnerability](https://img.shields.io/badge/🚨_Report_Vulnerability-Zayed_Shield-CC0001?style=for-the-badge&labelColor=8B0000)](https://github.com/nike4565/Zayed-Shield/security/advisories/new)
+
+</div>
