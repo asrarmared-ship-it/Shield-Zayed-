@@ -95,6 +95,20 @@
 
 </div>
 
+## 🛡️ Security Contribution
+
+![Zayed Shield Patch](https://img.shields.io/badge/Patched%20By-Zayed%20Shield-0A84FF?style=for-the-badge&logo=shield)
+
+**This vulnerability was fully analyzed, reproduced, and patched by the Zayed Shield Cyber Defense Team.**
+
+- 🛠️ **CVE Fixed:** CVE-2025-68717  
+- 🧪 **Exploit Reproduction:** Completed  
+- 🔒 **Mitigation:** Multi-layer session validation  
+- 🚀 **Status:** Patch successfully implemented and verified  
+- 🧑‍💻 **Researcher:** @asrar-mared (The Vulnerability Hunter)
+
+> Zayed Shield is committed to strengthening cybersecurity and providing rapid, professional responses to critical vulnerabilities.
+
 ## 📋 نظرة عامة
 
 **درع زايد** هو نظام أمن سيبراني شامل مصمم لحماية المؤسسات والبنية التحتية الحيوية من التهديدات الإلكترونية المتقدمة. يجمع المشروع بين تقنيات الكشف المبكر، التحليل الذكي، والاستجابة السريعة للحوادث الأمنية.
