@@ -24,14 +24,12 @@
 
 <div align="center">
 
-
 ![GitHub release](https://img.shields.io/github/v/release/nike4565/Zayed-Shield?style=for-the-badge)
 ![GitHub stars](https://img.shields.io/github/stars/nike4565/Zayed-Shield?style=for-the-badge)
 ![GitHub forks](https://img.shields.io/github/forks/nike4565/Zayed-Shield?style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues/nike4565/Zayed-Shield?style=for-the-badge)
 ![License](https://img.shields.io/github/license/nike4565/Zayed-Shield?style=for-the-badge)
 ![Platform](https://img.shields.io/badge/platform-Android-brightgreen?style=for-the-badge&logo=android)
-
 
 </div>
 
@@ -50,7 +48,6 @@
 [![Report Vulnerability](https://img.shields.io/badge/🚨_Report_Vulnerability-Zayed_Shield-CC0001?style=for-the-badge&labelColor=8B0000&logoColor=white)](https://github.com/nike4565/Zayed-Shield/security/advisories/new)
 
 </div>
-
 
 ## ✨ **المميزات الرئيسية**
 
@@ -83,6 +80,20 @@
 
 </div>
 
+## 🛠️ **التقنيات المستخدمة**
+
+<div align="center">
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
+![Rust](https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+![Kali Linux](https://img.shields.io/badge/Kali_Linux-557C94?style=for-the-badge&logo=kali-linux&logoColor=white)
+
+</div>
 
 ## 📋 نظرة عامة
 
