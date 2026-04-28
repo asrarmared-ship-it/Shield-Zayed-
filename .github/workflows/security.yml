@@ -29,79 +29,77 @@
 #   - Daily scheduled scans
 #   - Manual workflow dispatch
 #
-# License: MIT with Security Addendum
-# Copyright © 2026 Zayed CyberShield | asrar-mared
-# ═══════════════════════════════════════════════════════════════════════════
+# الترخيص: MITمع ملحق الأجميع الحقوق محفوظة © 2026 درع زايد
 
-name: 🛡️ Security & Vulnerability Scanning
+الاسم : 🛡️ فحص الأمن والثغرات الأمنية
 
-on:
-  # Run on every push to main and develop branches
-  push:
-    branches:
-      - main
-      - develop
-      - 'security/**'
-    paths-ignore:
+على :
+  # يتم تشغيله مع كل عملية دفع إلى الفرعين الرئيسي والتطويري
+  يدفع :
+    الفروع :
+      - رئيسي
+      - يطور
+      - 'حماية/**'
+    تجاهل المسارات :
       - '**.md'
       - 'docs/**'
       - '.github/ISSUE_TEMPLATE/**'
 
-  # Run on pull requests targeting main
-  pull_request:
-    branches:
-      - main
-      - develop
-    types:
-      - opened
-      - synchronize
-      - reopened
+  # يتم تشغيلها على طلبات السحب التي تستهدف الفرع الرئيسي
+  طلب سحب :
+    الفروع :
+      - رئيسي
+      - يطور
+    الأنواع :
+      - مفتوح
+      - مزامنة
+      - أعيد فتحه
 
-  # Daily security scan at midnight UTC
-  schedule:
-    - cron: '0 0 * * *'
+  فحص أمني يومي في منتصف الليل بالتوقيت العالمي المنسق
+  جدول
+    - cron : '0 0 * * *'
 
-  # Allow manual triggering
-  workflow_dispatch:
-    inputs:
-      scan_level:
-        description: 'Security scan level'
-        required: true
-        default: 'full'
-        type: choice
-        options:
-          - quick
-          - standard
-          - full
-          - aggressive
+  السماح بالتشغيل اليدوي
+  workflow_dispatch :
+    المدخلات :
+      مستوى_المسح :
+        الوصف : "مستوى فحص الأمان"
+        مطلوب : صحيح
+        الوضع الافتراضي : 'كامل'
+        النوع : اختيار
+        خيارات :
+          - سريع
+          - معيار
+          - ممتلىء
+          - عنيف
 
-# Permissions
-permissions:
-  contents: read
-  security-events: write
-  pull-requests: write
-  issues: write
+الأذونات
+الأذونات :
+  المحتويات : اقرأ
+  أحداث الأمان : كتابة
+  طلبات السحب : كتابة
+  المشكلات : الكتابة
 
-# Environment variables
-env:
-  SCAN_LEVEL: ${{ github.event.inputs.scan_level || 'standard' }}
-  PYTHON_VERSION: '3.11'
-  NODE_VERSION: '20.x'
-  GO_VERSION: '1.21'
+متغيرات البيئة
+البيئة :
+  مستوى المسح : $ { { github.event.inputs.scan_level || 'standard'  } }
+  إصدار بايثون : '3.11'
+  NODE_VERSION : '20.x'
+  GO_VERSION : '1.21'
 
-# Concurrency
-concurrency:
-  group: security-${{ github.ref }}
-  cancel-in-progress: true
+# التزامن
+التزامن :
+  المجموعة : security-$ { { github.ref } }
+  إلغاء قيد التنفيذ : صحيح
 
-jobs:
-  # ═══════════════════════════════════════════════════════════════════════════
-  # JOB 1: METADATA & PREPARATION
-  # ═══════════════════════════════════════════════════════════════════════════
+الوظائف :
+  ═ ...
+  # المهمة 1: البيانات الوصفية والإعداد
+  ═ ...
   
-  metadata:
-    name: 📋 Security Scan Metadata
-    runs-on: ubuntu-latest
+  البيانات الوصفية :
+    الاسم : 📋 بيانات تعريف فحص الأمان
+    يعمل على : أحدث إصدار من أوبونتو
     outputs:
       scan_id: ${{ steps.metadata.outputs.scan_id }}
       timestamp: ${{ steps.metadata.outputs.timestamp }}
@@ -118,7 +116,6 @@ jobs:
           echo "**Scan ID:** \`$SCAN_ID\`" >> $GITHUB_STEP_SUMMARY
           echo "**Timestamp:** $TIMESTAMP" >> $GITHUB_STEP_SUMMARY
           echo "**Trigger:** ${{ github.event_name }}" >> $GITHUB_STEP_SUMMARY
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 2: SECRET SCANNING
   # ═══════════════════════════════════════════════════════════════════════════
@@ -169,7 +166,6 @@ jobs:
           name: secrets-scan-report-${{ needs.metadata.outputs.scan_id }}
           path: secrets-baseline.json
           retention-days: 30
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 3: DEPENDENCY VULNERABILITY SCANNING
   # ═══════════════════════════════════════════════════════════════════════════
@@ -230,7 +226,6 @@ jobs:
           sarif_file: ${{ matrix.scanner }}-results.sarif
           category: dependency-${{ matrix.scanner }}
         continue-on-error: true
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 4: SAST (STATIC APPLICATION SECURITY TESTING)
   # ═══════════════════════════════════════════════════════════════════════════
@@ -286,7 +281,6 @@ jobs:
         run: |
           npm install -g eslint eslint-plugin-security
           eslint . --ext .js --format json --output-file eslint-report.json || true
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 5: CONTAINER SECURITY
   # ═══════════════════════════════════════════════════════════════════════════
@@ -331,7 +325,6 @@ jobs:
         with:
           sarif_file: trivy-container.sarif
           category: container-security
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 6: INFRASTRUCTURE AS CODE SECURITY
   # ═══════════════════════════════════════════════════════════════════════════
@@ -373,7 +366,6 @@ jobs:
         with:
           sarif_file: checkov-results.sarif
           category: iac-security
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 7: LICENSE COMPLIANCE
   # ═══════════════════════════════════════════════════════════════════════════
@@ -404,7 +396,6 @@ jobs:
         with:
           name: license-report-${{ needs.metadata.outputs.scan_id }}
           path: licenses.json
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 8: SBOM GENERATION
   # ═══════════════════════════════════════════════════════════════════════════
@@ -462,7 +453,6 @@ jobs:
         with:
           sarif_file: scorecard-results.sarif
           category: supply-chain
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 10: MALWARE SCANNING
   # ═══════════════════════════════════════════════════════════════════════════
@@ -490,7 +480,6 @@ jobs:
           # Add custom YARA rules here
           find . -type f -name "*.exe" -o -name "*.dll" | \
             xargs yara -r /path/to/rules . > yara-report.txt || true
-
   # ═══════════════════════════════════════════════════════════════════════════
   # JOB 11: REPORTING & NOTIFICATIONS
   # ═══════════════════════════════════════════════════════════════════════════
