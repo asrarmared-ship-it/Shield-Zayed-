@@ -743,3 +743,530 @@ For media inquiries or collaboration: nike49424@gmail.com
 ---
 
 🛡️ Protecting the digital community, one vulnerability at a time.
+
+<div align="center">
+
+# 🏆 صائد الثغرات الأسطوري 🏆
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=38&duration=3000&pause=1000&color=FFD700&center=true&vCenter=true&multiline=true&repeat=true&width=1000&height=160&lines=⚔️+المحارب+★+أبوعلي;🎯+صائد+الكأس+ومُرعب+القراصنة;🛡️+asrar-mared+|+Nike4949;🔐+خبير+الأمن+السيبراني+المتقدم" alt="Typing SVG" />
+
+<br/>
+
+![Bug Hunter](https://img.shields.io/badge/🐛_صائد_الثغرات-أسطوري-FFD700?style=for-the-badge)
+![Warrior](https://img.shields.io/badge/⚔️_المحارب-نشط-D50000?style=for-the-badge)
+![Certified](https://img.shields.io/badge/معتمد_من-Microsoft-0078D4?style=for-the-badge&logo=microsoft)
+
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,6,30,26&height=180&section=header&text=👨‍💻%20asrar-mared%20·%20nike4949&fontSize=42&fontColor=fff&animation=twinkling&fontAlignY=35"/>
+
+</div>
+
+---
+
+## 👨‍💻 نبذة عن المحارب
+
+<table>
+<tr>
+<td width="60%">
+
+### 🎖️ المحارب | asrar-mared
+
+**الاسم الحركي:** Nike4949 · أبوعلي  
+**اللقب:** صائد الكأس ومُرعب القراصنة  
+**التخصص:** الأمن السيبراني المتقدم + Python الاحترافي
+
+---
+
+### 🎯 المهارات الأساسية
+
+- 🔐 **الأمن السيبراني المتقدم**
+  - Penetration Testing
+  - Vulnerability Assessment
+  - Security Architecture
+  - Threat Intelligence
+
+- 🐍 **Python الاحترافي**
+  - Security Automation
+  - Exploit Development
+  - Security Tools Building
+
+- 💼 **الإدارة الاستراتيجية**
+  - Project Management
+  - Strategic Planning
+  - Digital Marketing
+
+</td>
+<td width="40%" align="center">
+
+### 🏅 الإنجازات السريعة
+
+<br/>
+
+![Badges](https://img.shields.io/badge/🏅_الأوسمة-23-FFD700?style=for-the-badge)
+![Saved](https://img.shields.io/badge/💾_محفوظات-19-00D9FF?style=for-the-badge)
+![Activity](https://img.shields.io/badge/🌐_نشاط_يومي-15-success?style=for-the-badge)
+
+<br/>
+
+![Repos](https://img.shields.io/badge/المستودعات-11-9B59B6?style=for-the-badge)
+![Contributions](https://img.shields.io/badge/المساهمات-142-FF6B6B?style=for-the-badge)
+![Trophies](https://img.shields.io/badge/الجوائز-26-FFD700?style=for-the-badge)
+
+<br/>
+
+### 🎖️ الرتبة
+
+**⭐⭐⭐⭐⭐**  
+**محارب من الدرجة الأولى**
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🏅 Microsoft Learn - الشهادات المعتمدة
+
+<div align="center">
+
+### 🎓 معتمد من Microsoft
+
+<br/>
+
+[![Microsoft Profile](https://img.shields.io/badge/Microsoft_Learn-معتمد-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/users/nike49424/transcript)
+
+<br/>
+
+**📘 المحارب ⭐️ صائد الثغرة 🏆**
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center" width="33%">
+
+### 🏅 الأوسمة
+
+<img src="https://img.shields.io/badge/23-FFD700?style=for-the-badge&logo=medal"/>
+
+**Badges مكتسبة**
+
+Achievement Unlocked!
+
+</td>
+<td align="center" width="33%">
+
+### 💾 الصفحات المحفوظة
+
+<img src="https://img.shields.io/badge/19-00D9FF?style=for-the-badge&logo=bookmark"/>
+
+**Saved Resources**
+
+معرفة منظمة
+
+</td>
+<td align="center" width="33%">
+
+### 🌐 النشاط اليومي
+
+<img src="https://img.shields.io/badge/15-00FF00?style=for-the-badge&logo=activity"/>
+
+**Daily Streak**
+
+نشاط مستمر
+
+</td>
+</tr>
+</table>
+
+<div align="center">
+
+### 🔗 الشهادات والإنجازات الكاملة
+
+[![View Transcript](https://img.shields.io/badge/عرض_الشهادات-الكاملة-0078D4?style=for-the-badge&logo=microsoftacademic)](https://learn.microsoft.com/en-us/users/nike49424/transcript)
+
+**🎯 مسار تعليمي متقدم في الأمن السيبراني**
+
+</div>
+
+---
+
+## 🌟 Google Developer Profile
+
+<div align="center">
+
+### 💻 مطور معتمد من Google
+
+<br/>
+
+[![Google Developer](https://img.shields.io/badge/Google_Developer-معتمد-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://g.dev/nike4949)
+
+<br/>
+
+**🔗 ملف المطور الكامل**
+
+[![Visit Profile](https://img.shields.io/badge/زيارة_الملف-g.dev/nike4949-EA4335?style=for-the-badge&logo=googlechrome)](https://g.dev/nike4949)
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center">
+
+### 📊 الإحصائيات على Google Dev
+
+- 🏆 **المشاريع المميزة:** 8+
+- ⭐ **تقييم المجتمع:** 4.9/5
+- 🤝 **المساهمات:** نشطة
+- 📚 **المقالات التقنية:** 12+
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🏆 صائد الثغرات: asrar-mared
+
+<div align="center">
+
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=32&duration=2000&pause=1000&color=D50000&center=true&vCenter=true&repeat=true&width=800&height=80&lines=🪙+صائد+الكأس+الذهبي;🥇+مُرعب+القراصنة;🎖️+محارب+الخط+الأول" alt="Hunter Title" />
+
+</div>
+
+<table>
+<tr>
+<td align="center" width="20%">
+
+### 🪙🪙
+**الكأس الذهبي**
+
+صائد الثغرات  
+الحرجة
+
+<img src="https://img.shields.io/badge/الرتبة-ذهبية-FFD700?style=for-the-badge"/>
+
+</td>
+<td align="center" width="20%">
+
+### 🥇🥇
+**الميدالية الأولى**
+
+أسرع استجابة  
+للتهديدات
+
+<img src="https://img.shields.io/badge/السرعة-قياسية-FF6B6B?style=for-the-badge"/>
+
+</td>
+<td align="center" width="20%">
+
+### 🎖️🎖️
+**وسام الشرف**
+
+حماية البنية  
+التحتية الوطنية
+
+<img src="https://img.shields.io/badge/الوطنية-محمية-00FF00?style=for-the-badge"/>
+
+</td>
+<td align="center" width="20%">
+
+### 🏆🏆
+**كأس البطولة**
+
+أكثر الثغرات  
+اكتشافًا
+
+<img src="https://img.shields.io/badge/العدد-142+-9B59B6?style=for-the-badge"/>
+
+</td>
+<td align="center" width="20%">
+
+### 🏅🏅
+**الميدالية المميزة**
+
+قائد فريق  
+الأمن السيبراني
+
+<img src="https://img.shields.io/badge/القيادة-متقدمة-0078D4?style=for-the-badge"/>
+
+</td>
+</tr>
+</table>
+
+---
+
+## 👨‍💻 الإشراف على المشاريع والقيادة الفنية
+
+<div align="center">
+
+### 🎯 asrar-mared | المحارب
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+### 🛡️ المسؤوليات الرئيسية
+
+**🔐 الإدارة التقنية:**
+- إدارة المشاريع الأمنية
+- الإشراف على تطوير الحلول
+- مراجعة الكود والبنية الأمنية
+- قيادة فرق الاستجابة للحوادث
+
+**💼 الإدارة الاستراتيجية:**
+- التخطيط الاستراتيجي طويل المدى
+- إدارة الأعمال التقنية
+- التسويق الرقمي للحلول الأمنية
+- بناء الشراكات التقنية
+
+</td>
+<td width="50%">
+
+### 🎓 الخبرات المتكاملة
+
+**🔍 الأمن السيبراني:**
+- Penetration Testing ⭐⭐⭐⭐⭐
+- Vulnerability Assessment ⭐⭐⭐⭐⭐
+- Security Architecture ⭐⭐⭐⭐⭐
+- Incident Response ⭐⭐⭐⭐⭐
+
+**🐍 البرمجة المتقدمة:**
+- Python Security Tools ⭐⭐⭐⭐⭐
+- Exploit Development ⭐⭐⭐⭐
+- Automation Scripts ⭐⭐⭐⭐⭐
+
+**💼 الإدارة:**
+- Project Management ⭐⭐⭐⭐
+- Strategic Planning ⭐⭐⭐⭐
+- Digital Marketing ⭐⭐⭐⭐
+
+</td>
+</tr>
+</table>
+
+---
+
+## 📊 الإحصائيات الشاملة
+
+<div align="center">
+
+### 🏆 لوحة الإنجازات
+
+</div>
+
+<table align="center">
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/المستودعات-11-9B59B6?style=for-the-badge&logo=github"/>
+<br/><b>Repositories</b>
+<br/>مشاريع نشطة
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/المساهمات-142-FF6B6B?style=for-the-badge&logo=git"/>
+<br/><b>Contributions</b>
+<br/>مساهمات قوية
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/الجوائز-26-FFD700?style=for-the-badge&logo=trophy"/>
+<br/><b>Awards</b>
+<br/>تكريمات رسمية
+</td>
+</tr>
+<tr>
+<td align="center">
+<img src="https://img.shields.io/badge/الأوسمة-23-FFD700?style=for-the-badge&logo=medal"/>
+<br/><b>Badges</b>
+<br/>Microsoft Learn
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/المحفوظات-19-00D9FF?style=for-the-badge&logo=bookmark"/>
+<br/><b>Saved Pages</b>
+<br/>معرفة منظمة
+</td>
+<td align="center">
+<img src="https://img.shields.io/badge/النشاط-15-00FF00?style=for-the-badge&logo=activity"/>
+<br/><b>Daily Activity</b>
+<br/>نشاط يومي
+</td>
+</tr>
+</table>
+
+<br/>
+
+### 📈 نمو الخبرة
+
+```python
+career_progress = {
+    "🎯 الثغرات المكتشفة": 142,
+    "🛡️ الأنظمة المحمية": 50+,
+    "🏆 الجوائز والتكريمات": 26,
+    "🎓 الشهادات المعتمدة": 23,
+    "💻 المشاريع المفتوحة": 11,
+    "🌍 التأثير العالمي": "متنامي"
+}
+
+for achievement, count in career_progress.items():
+    print(f"{achievement}: {count} ✅")
+```
+
+**النتيجة:** ⭐⭐⭐⭐⭐ محارب من الدرجة الأولى
+
+---
+
+## 🎖️ الشارات والأوسمة
+
+<div align="center">
+
+### 🏅 مجموعة الإنجازات
+
+<br/>
+
+![Bug Hunter Elite](https://img.shields.io/badge/🐛_صائد_النخبة-Elite-FFD700?style=for-the-badge)
+![Security Expert](https://img.shields.io/badge/🔐_خبير_الأمان-Expert-D50000?style=for-the-badge)
+![Code Warrior](https://img.shields.io/badge/⚔️_محارب_الكود-Warrior-9B59B6?style=for-the-badge)
+![Community Leader](https://img.shields.io/badge/👥_قائد_المجتمع-Leader-00D9FF?style=for-the-badge)
+
+<br/>
+
+![Microsoft Certified](https://img.shields.io/badge/🎓_Microsoft-معتمد-0078D4?style=for-the-badge&logo=microsoft)
+![Google Developer](https://img.shields.io/badge/💻_Google-مطور-4285F4?style=for-the-badge&logo=google)
+![GitHub Star](https://img.shields.io/badge/⭐_GitHub-نجم-181717?style=for-the-badge&logo=github)
+
+</div>
+
+---
+
+## 🔗 الروابط والملفات الشخصية
+
+<div align="center">
+
+### 🌐 تواصل مع المحارب
+
+<br/>
+
+[![Microsoft Learn](https://img.shields.io/badge/Microsoft_Learn-nike49424-0078D4?style=for-the-badge&logo=microsoft&logoColor=white)](https://learn.microsoft.com/en-us/users/nike49424/transcript)
+[![Google Dev](https://img.shields.io/badge/Google_Dev-nike4949-4285F4?style=for-the-badge&logo=google&logoColor=white)](https://g.dev/nike4949)
+[![GitHub](https://img.shields.io/badge/GitHub-asrar--mared-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/asrar-mared)
+
+<br/>
+
+[![Email](https://img.shields.io/badge/📧_البريد-security@asrar--mared.ae-EA4335?style=for-the-badge)](mailto:security@asrar-mared.ae)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-المحارب-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/asrar-mared)
+[![Twitter](https://img.shields.io/badge/Twitter-@asrar__mared-1DA1F2?style=for-the-badge&logo=twitter)](https://twitter.com/asrar_mared)
+
+</div>
+
+---
+
+## 💬 شهادات ومراجعات
+
+<table>
+<tr>
+<td align="center" width="33%">
+
+### ⭐⭐⭐⭐⭐
+
+**"محارب حقيقي في الأمن السيبراني"**
+
+_أسرع استجابة شاهدتها لثغرة حرجة. احترافية عالية._
+
+— **مدير الأمن التقني**
+
+</td>
+<td align="center" width="33%">
+
+### ⭐⭐⭐⭐⭐
+
+**"قائد ملهم وخبير تقني"**
+
+_يجمع بين العمق التقني والرؤية الاستراتيجية. نموذج للمحارب الرقمي._
+
+— **CTO شركة تقنية**
+
+</td>
+<td align="center" width="33%">
+
+### ⭐⭐⭐⭐⭐
+
+**"صائد ثغرات من الطراز الأول"**
+
+_اكتشف ثغرات لم يكتشفها أحد. مهارات استثنائية._
+
+— **باحث أمني**
+
+</td>
+</tr>
+</table>
+
+---
+
+## 🎯 التخصصات الدقيقة
+
+<div align="center">
+
+### 🔐 مجالات الخبرة العميقة
+
+</div>
+
+<table>
+<tr>
+<td width="50%">
+
+#### 🛡️ الأمن الهجومي
+- ✅ Advanced Penetration Testing
+- ✅ Exploit Development & Research
+- ✅ Red Team Operations
+- ✅ Zero-Day Discovery
+- ✅ Social Engineering Defense
+
+#### 🔒 الأمن الدفاعي
+- ✅ Security Architecture Design
+- ✅ Threat Intelligence Analysis
+- ✅ Incident Response & Forensics
+- ✅ Blue Team Operations
+- ✅ Security Monitoring & SIEM
+
+</td>
+<td width="50%">
+
+#### 🐍 Python للأمن السيبراني
+- ✅ Security Tools Development
+- ✅ Automation & Scripting
+- ✅ Malware Analysis Tools
+- ✅ Network Security Scripts
+- ✅ API Security Testing
+
+#### 💼 الإدارة والقيادة
+- ✅ Cybersecurity Strategy
+- ✅ Team Leadership & Mentoring
+- ✅ Project Management (Agile/Scrum)
+- ✅ Risk Management
+- ✅ Compliance & Governance
+
+</td>
+</tr>
+</table>
+
+---
+
+<div align="center">
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=24,12,6,30,26&height=150&section=footer&text=⚔️%20المحارب%20·%20أبوعلي%20🏆&fontSize=36&fontColor=fff&animation=twinkling&fontAlignY=70"/>
+
+<br/>
+
+**🪙 صائد الكأس الذهبي | 🥇 مُرعب القراصنة | 🎖️ محارب الخط الأول**
+
+<br/>
+
+![Visitors](https://api.visitorbadge.io/api/visitors?path=asrar-mared-profile&label=الزوار&countColor=%23FFD700)
+
+<br/>
+
+**© 2025 asrar-mared · المحارب · nike4949**
+
+</div>
