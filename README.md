@@ -6,6 +6,17 @@
 
 <div align="center">
 
+
+  ### 🚀 **مجموعة شاملة من أدوات الأمن السيبراني المتقدمة**
+  
+  [![GitHub Stars](https://img.shields.io/github/stars/nike1212a/digital-genie-cybersecurity?style=for-the-badge&logo=github&color=gold&labelColor=black)](https://github.com/nike1212a/digital-genie-cybersecurity/stargazers)
+  [![GitHub Forks](https://img.shields.io/github/forks/nike1212a/digital-genie-cybersecurity?style=for-the-badge&logo=git&color=blue&labelColor=black)](https://github.com/nike1212a/digital-genie-cybersecurity/network)
+  [![GitHub Issues](https://img.shields.io/github/issues/nike1212a/digital-genie-cybersecurity?style=for-the-badge&logo=github&color=red&labelColor=black)](https://github.com/nike1212a/digital-genie-cybersecurity/issues)
+  [![License](https://img.shields.io/github/license/nike1212a/digital-genie-cybersecurity?style=for-the-badge&logo=opensourceinitiative&color=green&labelColor=black)](LICENSE)
+  
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=F75C7E&center=true&vCenter=true&multiline=true&width=600&height=100&lines=🔐+أمان+متقدم+للعالم+الرقمي;🌐+أدوات+شبكة+احترافية;🤖+ذكاء+اصطناعي+للحماية;📊+تحليل+جنائي+رقمي)](https://git.io/typing-svg)
+  
+
 ![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 ![License](https://img.shields.io/badge/license-MIT-green.svg)
 ![Security](https://img.shields.io/badge/security-enterprise-red.svg)
