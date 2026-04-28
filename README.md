@@ -1,3 +1,6 @@
+![Digital Genie Banner](https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6&height=300&section=header&text=درع🛡زايد&fontSize=50&fontColor=fff&animation=fadeIn)
+  
+
 # 🛡️ درع زايد للأمن السيبراني
 ## Zayed CyberShield Protection
 
