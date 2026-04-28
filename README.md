@@ -52,6 +52,38 @@
 </div>
 
 
+## ✨ **المميزات الرئيسية**
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/settings.png"/>
+<br><strong>🔧 إعداد تلقائي</strong>
+<br>سكريپت واحد يثبت كل شيء
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/network.png"/>
+<br><strong>🌐 أدوات الشبكة</strong>
+<br>مسح وتحليل متقدم
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/security-checked.png"/>
+<br><strong>🔐 الأمان المتقدم</strong>
+<br>حماية وفحص الثغرات
+</td>
+<td align="center" width="25%">
+<img src="https://img.icons8.com/color/96/000000/detective.png"/>
+<br><strong>📊 التحليل الجنائي</strong>
+<br>استرداد وتحليل البيانات
+</td>
+</tr>
+</table>
+
+</div>
+
+
 ## 📋 نظرة عامة
 
 **درع زايد** هو نظام أمن سيبراني شامل مصمم لحماية المؤسسات والبنية التحتية الحيوية من التهديدات الإلكترونية المتقدمة. يجمع المشروع بين تقنيات الكشف المبكر، التحليل الذكي، والاستجابة السريعة للحوادث الأمنية.
