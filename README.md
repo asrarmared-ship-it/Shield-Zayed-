@@ -26,7 +26,6 @@
 
 </div>
 
----
 
 <div align="center">
 
@@ -41,6 +40,102 @@
 ## 📋 نظرة عامة
 
 **درع زايد** هو نظام أمن سيبراني شامل مصمم لحماية المؤسسات والبنية التحتية الحيوية من التهديدات الإلكترونية المتقدمة. يجمع المشروع بين تقنيات الكشف المبكر، التحليل الذكي، والاستجابة السريعة للحوادث الأمنية.
+
+# 🇦🇪 Zayed Cyber Shield
+
+An open‑source national digital defense framework developed to support the cybersecurity capabilities of the United Arab Emirates.  
+All activities are conducted in full compliance with national laws and regulations, aligned with the UAE’s vision for a secure, advanced, and research‑driven digital ecosystem.
+
+---
+
+## 🎯 Dedication
+
+This project is dedicated to the United Arab Emirates in recognition of its leadership in:
+
+- Fostering innovation  
+- Advancing technological development  
+- Strengthening national cybersecurity capabilities  
+- Building a secure and resilient digital future
+
+---
+
+## 🧩 National Innovation Pillars
+
+- **Technological Innovation** — AI‑powered cybersecurity tools.  
+- **Digital Readiness** — Detection, analysis, and rapid response.  
+- **Open Development** — Open‑source research for the UAE tech ecosystem.  
+- **Smart Infrastructure** — Supporting digital transformation that reinforces national security.  
+- **National Commitment** — Operating with loyalty, responsibility, and full legal compliance.
+
+---
+
+## 🛡️ Zayed Cyber Shield
+
+A military‑grade methodology–driven framework that:
+
+- Enhances digital readiness  
+- Delivers field‑grade AI tools for monitoring, analysis, and incident response  
+- Supports the protection of critical national digital infrastructure
+
+---
+
+## 📦 National Reference Package
+
+![MDE-11718](https://img.shields.io/badge/🛡️_MDE-11718-007BFF?style=for-the-badge)
+![MOE-11733](https://img.shields.io/badge/🛡️_MOE-11733-28A745?style=for-the-badge)
+![MOE-11775](https://img.shields.io/badge/🛡️_MOE-11775-FFC107?style=for-the-badge)
+![NCS-44210](https://img.shields.io/badge/🛡️_NCS-44210-DC3545?style=for-the-badge)
+![UAE-CERT-22914](https://img.shields.io/badge/🛡️_UAE--CERT-22914-6F42C1?style=for-the-badge)
+
+**Official National Codes:**
+
+- **MDE‑11718** — Military Digital Engineering Registry  
+- **MOE‑11733** — Ministry of Education Research Accreditation  
+- **MOE‑11775** — National Cyber Research Authorization  
+- **NCS‑44210** — National Cybersecurity Standards Compliance  
+- **UAE‑CERT‑22914** — UAE Computer Emergency Response Tracking Code  
+
+> This package of identifiers reflects the project’s alignment with national strategic objectives in cybersecurity and digital defense.
+
+---
+
+## 🧪 Operational Framework
+
+The project operates under the Electronic Investigations Unit at the headquarters of **Asrar Mord**, maintaining technical records and digital evidence across:
+
+- **GitHub** — Version control, artifacts, and development workflow.  
+- **Microsoft Learn** — Structured documentation and procedural references.  
+- **Google Cloud** — Secure evidence storage and distributed investigation workflows.  
+- **Educational Media** — Public awareness and cybersecurity literacy for UAE citizens.
+
+This framework ensures consistent documentation, controlled access, and professional‑grade digital forensics.
+
+---
+
+## 🎓 Talent & Research
+
+- **Security Competitions** — Developing national cybersecurity talent.  
+- **Security Research Packages** — Advancing technical research and defensive capabilities.  
+
+---
+
+## 🧱 Components
+
+- **MariaDB Guardian Script** — `mariadb-guardian.sh`  
+- **Technical Reference** — `stackexchange_answer.md`  
+
+---
+
+## 🌍 International Collaboration
+
+Partnerships with leading global organizations, including support for:
+
+- **Institutional DNSSEC**  
+- **Sovereign signing infrastructure**  
+
+---
+
+> Zayed Cyber Shield is a national open‑source initiative that embodies loyalty, responsibility, and technical excellence in service of the UAE’s digital security.
 
 ### ✨ المميزات الرئيسية
 
