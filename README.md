@@ -449,7 +449,7 @@ print(f"تم اكتشاف {results.threats_found} تهديد")
 2. إنشاء فرع جديد (`git checkout -b feature/amazing-feature`)
 3. إجراء التعديلات وإضافة الاختبارات
 4. التأكد من مرور جميع الاختبارات (`pytest tests/`)
-5. Commit التغييرات (`git commit -m 'إضافة ميزة رائعة'`)
+5. Commit التغييرات (`git commit -m 'إضافة ميزة رائعة')
 6. Push إلى الفرع (`git push origin feature/amazing-feature`)
 7. فتح **Pull Request**
 
@@ -520,12 +520,12 @@ bandit -r src/
 
 ## 🎯 خارطة الطريق
 
-### الإصدار 1.1 (Q2 2024)
+### الإصدار 1.1 (Q2 2025)
 - [ ] دعم Kubernetes
 - [ ] تحسين خوارزميات التعلم الآلي
 - [ ] واجهة مستخدم محسّنة
 
-### الإصدار 2.0 (Q4 2024)
+### الإصدار 2.0 2025
 - [ ] دعم Cloud Native
 - [ ] تكامل مع SIEM
 - [ ] API موسع للمطورين
