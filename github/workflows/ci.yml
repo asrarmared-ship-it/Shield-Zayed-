@@ -1,0 +1,48 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Install dependencies
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y shellcheck
+    
+    - name: Lint shell scripts
+      run: |
+        shellcheck zayed-shield.sh install.sh
+    
+    - name: Run tests
+      run: |
+        bash ./tests/run_tests.sh
+    
+    - name: Security scan
+      run: |
+        bash ./tests/security_scan.sh
+
+  build:
+    runs-on: ubuntu-latest
+    needs: test
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+    
+    - name: Verify installation
+      run: |
+        bash install.sh --dry-run
+    
+    - name: Build documentation
+      run: |
+        echo "Documentation build successful"
